@@ -1,7 +1,7 @@
 # getFlaskPIN
 `getFlaskPIN`是一款烂大街的算`flask PIN`脚本。
 #### 不同之处
-1. 程序支持对于`username`以及`moddir(程序中定义为path)`的爆破，用户可自行前往`https://github.com/yuebusao/getFlaskPIN/blob/master/flaskpin.py#L88` 针对这两个参数的修改爆破字典。
+1. 程序支持对于`username`以及`moddir(程序中定义为path)`的爆破，用户可自行前往`https://github.com/yuebusao/getFlaskPIN/blob/master/flaskpin.py#L88` 针对这两个参数进行修改。
 2. 用户可输入`machine_id,boot_id,cgroup`，程序自行计算机器码。其中`cgroup`可输入文件路径，程序会自动读取。
 3. 网卡地址参数`address(uuid)`支持输入`mac`地址或者`mac`地址转换为`10`进制之后的结果。
 4. `werkzeug 2.0`之后的加密方式方式为`sha1`，`python3.6`之后安装`flask`默认安装`werkzeug>=2.0`，并且`python2`的`moddir`是`app.pyc`而不是`app.py`。基于以上几点考虑，本程序根据`path(moddir)`对`python`版本进行自识别。
