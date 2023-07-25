@@ -20,9 +20,9 @@ python flaskpin.py -u <username> -p <path> -a <address> -m <machineid> -b <booti
 python flaskpin.py --username=<username> --path=<path> --address=<address> --machineid=<machineid> --bootid=<bootid> --cgroup=<cgroup>
 ```
 #### 参数解释
-1. username:用户名(/etc/passwd)
-2. path:flask下app.py的绝对路径(页面报错得到,moddir别名)
-3. address:网卡地址(/sys/class/net/eth0/address,16进制或10进制均可)
-4. machineid:(/etc/machine-id，没有则不填)
-5. bootid(/proc/sys/kernel/random/boot_id，没有则不填)
-6. cgroup(/proc/self/cgroup,没有则不填,支持输入本地cgroup文件路径自动解析字符串)
+1. `username`:用户名(`/etc/passwd`)
+2. `path`:`flask`下`app.py`的绝对路径(页面报错得到,`moddir`别名)
+3. `address`:网卡地址(`/sys/class/net/eth0/address`,16进制或10进制均可)
+4. `machineid`:(`/etc/machine-id`，没有则不填)
+5. `bootid`(`/proc/sys/kernel/random/boot_id`，没有则不填)
+6. `cgroup`(`/proc/self/cgroup`,没有则不填,支持输入本地`cgroup`文件路径自动解析字符串)
