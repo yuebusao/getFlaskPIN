@@ -23,8 +23,8 @@ def getArgvs(argv):
                   "/sys/class/net/eth0/address,16进制或10进制均可)\nmachineid:(/etc/machine-id，没有则不填)\nbootid("
                   "/proc/sys/kernel/random/boot_id，没有则不填)\ncgroup(/proc/self/cgroup,没有则不填,支持输入本地cgroup文件路径自动解析字符串)")
             print("*" * 60 + "用法" + "*" * 60)
-            print('flaskpin.py -u <username> -p <path> -a <address> -m <machineid> -b <bootid> -c <cgroup>')
-            print('or: flaskpin.py --username=<username> --path=<path> --address=<address> '
+            print('python flaskpin.py -u <username> -p <path> -a <address> -m <machineid> -b <bootid> -c <cgroup>')
+            print('python flaskpin.py --username=<username> --path=<path> --address=<address> '
                   '--machineid=<machineid> --bootid=<bootid> --cgroup=<cgroup>')
             sys.exit()
         elif opt in ("-u", "--username"):
